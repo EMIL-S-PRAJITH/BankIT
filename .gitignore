@@ -18,3 +18,7 @@ Thumbs.db
 
 # VS Code local settings
 .vscode/
+
+# Database backup
+
+bankit_backup.sql

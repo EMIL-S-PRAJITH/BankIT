@@ -488,7 +488,7 @@ func enableCORS(handler http.Handler) http.Handler {
 		// Allow React frontend
 		w.Header().Set(
 			"Access-Control-Allow-Origin",
-			"http://localhost:5175",
+			"http://localhost:5173",
 		)
 
 		w.Header().Set(

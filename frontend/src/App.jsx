@@ -25,9 +25,9 @@ function App() {
 
       const [dashboardResponse, transactionsResponse, customersResponse] =
         await Promise.all([
-          axios.get("http://localhost:5000/api/dashboard"),
-          axios.get("http://localhost:5000/api/transactions"),
-          axios.get("http://localhost:5000/api/customers"),
+          axios.get("https://bankit-production-f1a6.up.railway.app/api/dashboard"),
+          axios.get("https://bankit-production-f1a6.up.railway.app/api/transactions"),
+          axios.get("https://bankit-production-f1a6.up.railway.app/api/customers"),
         ]);
 
       setDashboard(dashboardResponse.data);
@@ -46,7 +46,7 @@ function App() {
   const updateTransactionStatus = async (transactionId, status) => {
     try {
       await axios.post(
-        "http://localhost:5000/api/transactions/status",
+        "https://bankit-production-f1a6.up.railway.app/api/transactions/status",
         {
           transaction_id: transactionId,
           status: status,
