@@ -114,7 +114,7 @@ func main() {
 	// 5. Start server
 	// --------------------------------
 
-	port := os.Getenv("SERVER_PORT")
+	port := os.Getenv("PORT")
 
 	if port == "" {
 		port = "5000"
